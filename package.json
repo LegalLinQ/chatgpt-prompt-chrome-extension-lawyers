@@ -1,9 +1,11 @@
 {
   "name": "chatgpt-prompt-extension",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "ChatGPT Prompts",
   "author": "Cem PEHLİVAN",
-  "repository": "https://github.com/cempehlivan/chatgpt-prompt-chrome-extension",
+  "prompt author": "LegalLinQ",
+  "original repository": "https://github.com/cempehlivan/chatgpt-prompt-chrome-extension",
+  "repository": "https://github.com/LegalLinQ/chatgpt-prompt-chrome-extension-lawyers",
   "private": true,
   "scripts": {
     "watch": "webpack --mode=development --watch --config config/webpack.config.js",

@@ -39,7 +39,7 @@ const creator = () => {
   ulElement.setAttribute('class', 'flex gap-3.5 overflow-y-auto');
   ulElement.setAttribute(
     'style',
-    'flex-wrap: wrap;flex: 1 0 auto; height: 500px; align-items: flex-start;'
+    'flex-wrap: wrap;flex: 1 0 auto; height: 250px; align-items: flex-start;'
   );
 
   const searchInputElement = document.createElement('input');
@@ -108,7 +108,7 @@ const creator = () => {
     divContainer.appendChild(ulElement);
   }
 
-  var h1Element = document.querySelector('h1');
+  var h1Element = document.querySelector('h1').parentNode;
   h1Element.classList.add("mt-6");
   h1Element.classList.remove("flex-grow");
 

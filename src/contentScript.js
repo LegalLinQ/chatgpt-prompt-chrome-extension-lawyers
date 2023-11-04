@@ -120,13 +120,13 @@ const creator = () => {
   h1ElementParent.appendChild(divContainer);
 };
 
-const csvToArray = (str, delimiter = ',') => {
+const csvToArray = (str, delimiter = ',', , lineEnd = '\r\n') => {
   const headers = str
-    .slice(0, str.indexOf('\n'))
-    .split(delimiter)
-    .map((s) => s.replace(/(^"|"$)/g, ''));
+    .slice(0, str.indexOf(lineEnd))
+    .replace(/(^"|"$)/g, '')
+    .split(delimiter);
 
-  const rows = str.slice(str.indexOf('\n') + 1).split('\n');
+  const rows = str.slice(str.indexOf('\n') + 1).split(lineEnd);
 
   const arr = rows.map(function (row) {
     const values = row.replace(/(^"|"$)/g, '').split(delimiter);
